@@ -9,3 +9,16 @@ The "teachable machine" is a web-based application created by Google that allows
 ### Eye Opening.
 
 Really impresssed by this task already.
+
+### The Python environment I've used for this is called RPSML
+
+(Rock Paper Scissors ML)
+
+I have specified Python 3.8 for this virtual environemnt.
+
+TensorFlow wouldn't install, so I found this on StackOverFlow:
+
+pip install https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.8.0-py3-none-any.whl
+
+
+
