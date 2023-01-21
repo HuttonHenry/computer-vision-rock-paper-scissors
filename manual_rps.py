@@ -11,12 +11,12 @@ def get_user_choice():
 
 def get_winner(computer_choice, user_choice):
     if computer_choice == user_choice:
-        result = "Draw"
+        result = "It's a tie!"
     # Combinations for user to win
-    elif (computer_choice == "rock" and user_choice == "paper") or (computer_choice == "paper" and user_choice == "scissors"):
-        result = "User Wins!"
+    elif (computer_choice == "Rock" and user_choice == "Paper") or (computer_choice == "Paper" and user_choice == "Scissors"):
+        result = "You won!"
     # All other Combinations means Computer wins
     else:
-        result = "Computer Wins!"
+        result = "You lost"
     print(result)
     return result
