@@ -7,3 +7,4 @@ def get_computer_choice():
 
 def get_user_choice():
     req = input("Please make a choice.")
+    return req
