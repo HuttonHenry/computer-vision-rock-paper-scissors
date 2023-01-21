@@ -21,4 +21,11 @@ TensorFlow wouldn't install, so I found this on StackOverFlow:
 pip install https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.8.0-py3-none-any.whl
 
 
+This is what the script does:
+
+This script imports the OpenCV library, the Keras deep learning library, and the NumPy library. It loads a pre-trained Keras model called 'keras_model.h5' and captures video from the default camera (indicated by the parameter '0' in cv2.VideoCapture(0)). It then continuously captures frames from the video, resizes them to (224, 224), normalizes the pixel values, and uses the loaded model to make predictions on the image data. The script also displays each frame of the video and continuously prints out the model's predictions. The script can be closed by pressing the 'q' key.
+
+
+
+
 
