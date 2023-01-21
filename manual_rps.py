@@ -6,8 +6,17 @@ def get_computer_choice():
     return choice
 
 def get_user_choice():
-    req = input("Please enter Rock, Paper or Scissors")
-    return req
+    try:
+        while True:
+            choice = ["rock", "paper", "scissors"]
+            user_choice = input('Please enter one of the following: "Rock", "Paper", "Scissors"').lower()
+            if user_choice in choice:
+                break
+            else:
+                print('Not a valid entry!')
+        return user_choice
+    except:
+        print("error")
 
 def get_winner(computer_choice,user_choice):
     if computer_choice == user_choice:
