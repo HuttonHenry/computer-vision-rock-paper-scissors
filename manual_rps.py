@@ -1,5 +1,6 @@
 import random
 
+
 def get_computer_choice():
     rps = [ "Rock", "Paper", "Scissors"]
     choice = random.choice(rps)
@@ -21,6 +22,7 @@ def get_winner(computer_choice, user_choice):
     print(winner)
     return winner
 
-a=get_computer_choice()
-b=get_user_choice()
-get_winner(a,b)
+def play():
+    a=get_computer_choice()
+    b=get_user_choice()
+    get_winner(a,b)
