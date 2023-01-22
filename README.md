@@ -40,8 +40,9 @@ cap = cv2.VideoCapture(0)
 # Place data into numy object
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
-Code that needs to be assessed:
-image.png
+Adding an image using markdown:
+
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
 
 
 
