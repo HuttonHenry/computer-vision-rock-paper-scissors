@@ -11,7 +11,7 @@ def get_user_choice():
 
 def get_winner(computer_choice, user_choice):
     if computer_choice == user_choice:
-        winner = "It's a tie!"
+        winner = "It is a tie!" 
     # User wins under these conditions.
     elif (computer_choice == "Paper" and user_choice == "Scissors") or (computer_choice == "Rock" and user_choice == "Paper") or (computer_choice == "Scissors" and user_choice == "Rock") :
         winner = "You won!"
