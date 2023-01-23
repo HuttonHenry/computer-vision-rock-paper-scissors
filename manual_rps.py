@@ -1,6 +1,5 @@
 import random
 
-
 def get_computer_choice():
     rps = [ "Rock", "Paper", "Scissors"]
     choice = random.choice(rps)
