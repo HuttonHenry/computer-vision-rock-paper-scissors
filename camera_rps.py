@@ -1,13 +1,14 @@
-import manual_rps
 import cv2
+import time
 from keras.models import load_model
 import numpy as np
 model = load_model('keras_model.h5')
 cap = cv2.VideoCapture(0)
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
-def get_prediction():
-    while True: 
+while True: 
+    start = time.time()
+    while time.time() < start + 5:
         ret, frame = cap.read()
         resized_frame = cv2.resize(frame, (224, 224), interpolation = cv2.INTER_AREA)
         image_np = np.array(resized_frame)
@@ -18,12 +19,9 @@ def get_prediction():
         # Press q to close the window
         print(prediction)
         if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
+                break
             
 # After the loop release the cap object
 cap.release()
 # Destroy all the windows
 cv2.destroyAllWindows()
-
-
-
