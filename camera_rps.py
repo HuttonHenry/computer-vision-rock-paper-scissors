@@ -6,6 +6,9 @@ model = load_model('keras_model.h5')
 cap = cv2.VideoCapture(0)
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
+computer_wins = 0
+user_wins = 0
+
 def get_prediction():
     while True: 
         start = time.time()
@@ -21,6 +24,13 @@ def get_prediction():
             print(prediction)
             if cv2.waitKey(1) & 0xFF == ord('q'):
                     break
+            if prediction[0] > 0.5:
+                computer_wins += 1
+                print("Computer wins this round!")
+            else:
+                user_wins += 1
+                print("User wins this round!")
+    print("Game over! Computer wins: ", computer_wins, " User wins: ", user_wins)
 
 def main():
      get_prediction()
