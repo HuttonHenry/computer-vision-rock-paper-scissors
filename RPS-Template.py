@@ -21,12 +21,11 @@ def get_prediction():
             print(prediction)
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
-            
+    return prediction        
 
 
 def main():
    get_prediction()
-
 
 
 
