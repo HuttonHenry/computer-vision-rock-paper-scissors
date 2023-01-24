@@ -11,6 +11,8 @@ user_wins = 0
 
 def get_prediction():
     while True: 
+        if computer_wins == 3 or user_wins == 3:
+            break
         start = time.time()
         while time.time() < start + 5:
             ret, frame = cap.read()
